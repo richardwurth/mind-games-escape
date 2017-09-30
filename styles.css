@@ -112,7 +112,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+ }
+
+.about-section {
+  width: 375px;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-header {
+  font-size: 24px;
+}
+
+.about-content {
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Arhivo Black', arial, sans-serif;
+  text-align: center;
+}
 
 #subscribe-section {
   margin-top: 100px;
