@@ -1,8 +1,10 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: rgb(17, 17, 17);
   margin: 0px;
+  color: white;
+  font-family: 'Archivo', sans-serif;
 }
 
 .top-bar {
@@ -45,6 +47,38 @@ body {
   background-size: cover;
   background-color: black;
   background-position: center;
+}
+
+#first {
+  opacity: .7;
+  transition: all .4s;
+}
+
+#first:hover {
+  opacity: 1;
+  transform: scale(1.04,1.04);
+  padding-right: 9px;
+}
+#second {
+  opacity: .7;
+  transition: all .4s;
+}
+
+#second:hover {
+  opacity: 1;
+  transform: scale(1.04,1.04);
+  padding-left: 9px;
+  padding-right: 9px;
+}
+#third {
+  opacity: .7;
+  transition: all .4s;
+}
+
+#third:hover {
+  opacity: 1;
+  transform: scale(1.04,1.04);
+  padding-left: 9px;
 }
 
 #main-banner {
@@ -104,7 +138,12 @@ body {
 #about-us {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
+
+.about-paragraph {
+  width: 240px;
+}
 
 .about-nav {
   height: auto;
@@ -116,6 +155,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: center;
+  cursor: default;
  }
 
 .about-section {
@@ -125,6 +165,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
 
 .about-header {
   font-size: 24px;
@@ -138,23 +179,123 @@ body {
   width: 375px;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Arhivo Black', arial, sans-serif;
+  font-family: 'Montserrat', arial, sans-serif;
   text-align: center;
+}
+
+#email-input {
+  width: 600px;
+  height: 30px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, .1);
+  padding-left: 20px;
+  font-size: 16px;
+  color: white;
+  border-width: 0px;
+  border-bottom: 3px solid white;
+}
+
+*::-webkit-input-placeholder {
+    color: white;
+    font-family: 'Mont', sans-serif;
+}
+
+input:focus {outline:0;}
+
+input,
+textarea {
+    font-size: 24px;
+    padding: 10px;
+
+    color: white;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #ccc;
+    text-shadow: none;
+    -webkit-text-fill-color: initial;
+}
+
+#signup-button {
+  height: 52px;
+  width: 120px;
+  background-color:white;
+  border-width: 0px;
+  font-family:'Montserrat', arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#contact-send-button {
+  height: 60px;
+  width: 100px;
+  background-color: rgb(89, 121, 142);
+  border-width: 0px;
+  font-family:'Montserrat', arial, sans-serif;
+  font-size: .9em;
+  font-weight: bold;
+  color: white;
 }
 
 #subscribe-section {
   margin-top: 100px;
   height: 15vh;
   width: 100%;
-  background-color: lightgray;
+  background-color: rgb(79, 108, 127);
   display: flex;
   justify-content: center;
   align-items: center; }
 
+  textarea {
+  	resize: none;
+    outline:0;
+  }
+  .form-label {
+  	font-size: 12px;
+  	color: #5e9bfc;
+  	margin: 0;
+  	display: block;
+  	opacity: 1;
+  	-webkit-transition: .333s ease top, .333s ease opacity;
+  	transition: .333s ease top, .333s ease opacity;
+  }
+  .form-control {
+  	border-radius: 0;
+  	border-color: white;
+     	border-width: 0 0 4px 0;
+     	border-style: none none solid none;
+     	box-shadow: none;
+  }
+
+  .js-hide-label {
+  	opacity: 0;
+  }
+  .js-unhighlight-label {
+  	color: #999
+  }
+  .btn-start-order {
+  	background: 0 0 #ffffff;
+      border: 1px solid #2f323a;
+      border-radius: 3px;
+      color: #2f323a;
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      line-height: inherit;
+      margin: 30px 0;
+      padding: 10px 50px;
+      text-transform: uppercase;
+      transition: all 0.25s ease 0s;
+  }
+  .btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+  	border-color: #5e9bfc;
+  	color: #5e9bfc;
+  }
+
 #contact-us {
   margin-top: 80px;
   height: 60vh;
-  background-color: lightblue;
+  background-color: rgb(17, 17, 17);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,8 +303,20 @@ body {
 
 #contact-form {
   height: 400px;
-  width: 400px;
-  background-color: green; }
+  width: 750px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+  .form-control {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: black;
+    font-family: 'Montserrat', arial, sans-serif;
+    font-size: 1em;
+  }
 
 .see-us {
   margin-top: 80px;
