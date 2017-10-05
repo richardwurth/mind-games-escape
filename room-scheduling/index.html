@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Germania+One|Gloria+Hallelujah|Nosifer|Rye" rel="stylesheet">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body ng-controller="mainController">
+  <div id="main">
+    <div id="floating-text">
+      <h1 id="one">Can you</h1>
+      <h1 id="two">find him</h1>
+      <h1 id="three">before it's</h1>
+      <h1 id="four">too late?</h1>
+    </div>
+    <iframe id="iframe_id"></iframe>
+    <img id="main-background" src="./finding_sherlock.png" alt="">
+    <div id="button-row">
+      <button ng-click="testClick()" class="buttons" id="schedule-button" type="button" name="button">Purchase Tickets</button>
+      <button class="buttons" id="info-button" type="button" name="button">Room Info</button>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
