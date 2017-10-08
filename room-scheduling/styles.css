@@ -336,5 +336,10 @@ button:focus {
     animation-fill-mode: forwards;
   }
 
-
+  #room-info {
+    display: none;
+    height: 100vh;
+    width: auto;
+    z-index: -2;
+  }
 }
