@@ -5,12 +5,32 @@ angular.module("myApp").controller("mainController", function($scope){
       $('#iframe_id').css({'width': '100%'});
     }, 2000);
   });
+
+  const mq = window.matchMedia( "(min-width: 500px)" );
+
+  if (mq.matches) {
+    $scope.iframeStyle = {
+      // "overflow-y" : "hidden"
+      "margin-left" : "-10px",
+      "margin-right" : "-50px",
+      "margin-top " : "-10px",
+    };
+    console.log("Big!");
+} else {
   $scope.iframeStyle = {
     // "overflow-y" : "hidden"
-    "margin-left" : "-10px",
-    "margin-right" : "-50px",
-    "margin-top " : "-10px",
+    "margin-left" : "0px",
+    "margin-right" : "0px",
+    "margin-top " : "0px",
   };
+  console.log("Small!");
+}
+  // $scope.iframeStyle = {
+  //   // "overflow-y" : "hidden"
+  //   "margin-left" : "-10px",
+  //   "margin-right" : "-50px",
+  //   "margin-top " : "-10px",
+  // };
   let showingDefault = true;
   $scope.testClick = function(){
     if (showingDefault === true) {
