@@ -22,6 +22,7 @@ angular.module("myApp").controller("mainController", function($scope){
     "margin-left" : "0px",
     "margin-right" : "0px",
     "margin-top " : "0px",
+    "z-index" : "1"
   };
   console.log("Small!");
 }
