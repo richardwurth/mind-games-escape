@@ -7,14 +7,14 @@
   <title></title>
 </head>
 <body ng-controller="mainController">
-  <div id="main">
+  <div style="overflow-x: hidden" id="main">
     <div id="floating-text">
       <h1 id="one">Can you</h1>
       <h1 id="two">find him</h1>
       <h1 id="three">before it's</h1>
       <h1 id="four">too late?</h1>
     </div>
-    <iframe id="iframe_id"></iframe>
+    <iframe ng-style="iframeStyle" id="iframe_id"></iframe>
     <img id="main-background" src="./finding_sherlock.png" alt="">
     <div id="button-row">
       <button ng-click="testClick()" class="buttons" id="schedule-button" type="button" name="button">Purchase Tickets</button>

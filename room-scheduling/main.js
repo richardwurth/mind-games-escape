@@ -5,6 +5,12 @@ angular.module("myApp").controller("mainController", function($scope){
       $('#iframe_id').css({'width': '100%'});
     }, 2000);
   });
+  $scope.iframeStyle = {
+    // "overflow-y" : "hidden"
+    "margin-left" : "-10px",
+    "margin-right" : "-50px",
+    "margin-top " : "-10px",
+  };
   let showingDefault = true;
   $scope.testClick = function(){
     if (showingDefault === true) {
