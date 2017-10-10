@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles0.css">
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat" rel="stylesheet">
   <title>Mind Games Escape - Alpha</title>
 </head>
-<body>
+<body ng-controller="mainController">
+  <div id="room-scheduling-1" class="room-scheduling-1" ng-include="'index0.html'">
+  </div>
+  <div id="home" class="home">
+
   <div class="top-bar">
     <div id="logo">MIND GAMES ESCAPE</div>
     <div id="contact">(555) 555-5555</div>
@@ -19,13 +24,13 @@
       <div id="circle-content">
         <div id="welcome">WELCOME TO MIND GAMES ESCAPE</div>
         <div id="info">Below you will find our rooms currently available</div>
-        <button id="rooms-button">SEE ALL ROOMS</button>
+        <button ng-click="successTest()" id="rooms-button">SEE ALL ROOMS</button>
       </div>
     </div>
   </div>
   <div id="mobile-info-rooms">
     <div id="mobile-info">Below you will find our rooms currently available</div>
-    <button id="mobile-rooms-button">SEE ALL ROOMS</button>
+    <button ng-click="successTest()" id="mobile-rooms-button">SEE ALL ROOMS</button>
   </div>
   <div id="about-us">
     <h1 style="font-family: 'Archivo Black', sans-serif; font-size: 1.5em; color: rgb(101, 136, 160); margin-bottom: 30%">ABOUT US</h1>
@@ -56,7 +61,6 @@
       </div>
     </div>
   </div>
-</div>
 <div id="subscribe-section">
   <h2 id="subscribe-header">SUBSCRIBE</h2>
   <div id="subscribe-email"><input id="email-input" style="color: white" type="text" placeholder="Email Address" name="" value=""></div>
@@ -94,7 +98,10 @@
   <p style="opacity: .8; padding-bottom: 40px">Powered by nacho-daddy</p>
 </div>
 </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script type="text/javascript" src="app0.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

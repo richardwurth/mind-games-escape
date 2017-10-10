@@ -33,6 +33,35 @@ angular.module("myApp").controller("mainController", function($scope){
   //   "margin-right" : "-50px",
   //   "margin-top " : "-10px",
   // };
+  let showingHome = true;
+  $scope.successTest = () => {
+    $('.home').removeClass('animate-enter');
+    $('.home').addClass('animate-leave');
+    $('body').css({'background-color':'#400f0f'});
+    // $('.room-scheduling-1').toggleClass('animate-room-scheduling-1');
+    setTimeout(function(){
+      $('#room-scheduling-1').css({'opacity':'1'});
+      $('#main-background').css({'display':'block'});
+      $('#room-scheduling-1').css({'display':'block'});
+      $('#floating-text').css({'display':'flex'});
+      $('#main-background').css({'opacity':'1'});
+    $('#home').css({'display':'none'});
+},400);
+};
+
+  $scope.previous = () => {
+    $('#home').css({'display':'block'});
+    $('#room-scheduling-1').css({'opacity':'0'});
+    $('body').css({'background-color':'rgb(17, 17, 17)'});
+    setTimeout(function(){
+      $('.home').removeClass('animate-leave');
+      $('.home').addClass('animate-enter');
+      $('#main-background').css({'display':'none'});
+      $('#room-scheduling-1').css({'display':'none'});
+      $('#floating-text').css({'display':'none'});
+},400);
+  };
+
   let showingDefault = true;
   $scope.testClick = function(){
     if (showingDefault === true && mq.matches === true) {
@@ -59,6 +88,10 @@ angular.module("myApp").controller("mainController", function($scope){
       window.location = "https://app.escapetix.com/events/2483";
     }
   };
+
+  // $scope.successTest = function(){
+  //   console.log("Successfully clicked the button!");
+  // };
 
   $scope.showInfo = () => {
     // $('#room-info').css({'display':'block'});

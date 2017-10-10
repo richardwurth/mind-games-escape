@@ -6,6 +6,39 @@ body {
   color: white;
   font-family: 'Archivo', sans-serif;
   overflow-x: hidden;
+  transition: all 2s;
+}
+
+#room-scheduling-1 {
+  display:none;
+  transition: opacity .5s;
+}
+
+@keyframes leave-page {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(1500px);
+  }
+}
+
+
+@keyframes enter-page {
+  0% {
+    transform: translateY(1500px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-enter {
+  animation: .5s ease-out 0s 1 enter-page;
+}
+
+.animate-leave {
+  animation: .5s ease-in 0s 1 leave-page;
 }
 
 button {
