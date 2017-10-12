@@ -9,17 +9,16 @@
   <title>Mind Games Escape - Alpha</title>
 </head>
 <body ng-controller="mainController">
-  <div id="room-scheduling-1" class="room-scheduling-1" ng-include="'index0.html'">
-  </div>
+  <div id="room-scheduling-1" class="room-scheduling-1" ng-include="'index0.html'"></div>
+  <div class="room-1" id="insert-room-1" ng-include="'about-room-1.html'"></div>
   <div id="home" class="home">
-
   <div class="top-bar">
     <div id="logo">MIND GAMES ESCAPE</div>
     <div id="contact">(555) 555-5555</div>
   </div>
   <div id="main-banner">
     <div id="left-banner"></div>
-    <div id="right-banner"></div>
+    <div ng-click="successTest()" id="right-banner"></div>
     <div id="circle">
       <div id="circle-content">
         <div id="welcome">WELCOME TO MIND GAMES ESCAPE</div>
@@ -33,7 +32,7 @@
     <button ng-click="successTest()" id="mobile-rooms-button">SEE ALL ROOMS</button>
   </div>
   <div id="about-us">
-    <h1 style="font-family: 'Archivo Black', sans-serif; font-size: 1.5em; color: rgb(101, 136, 160); margin-bottom: 30%">ABOUT US</h1>
+    <h1>ABOUT US</h1>
   </div>
   <div class="about-nav">
     <div id="first" class="about-section">
@@ -103,5 +102,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script type="text/javascript" src="app0.js"></script>
 <script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="about-room-1.js"></script>
 </body>
 </html>

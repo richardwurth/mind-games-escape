@@ -62,7 +62,7 @@ button:focus {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
+  position: relative;
   opacity: .75;
  }
 
@@ -95,7 +95,7 @@ button:focus {
   height: 100%;
   background-image: url('//img1.wsimg.com/isteam/stock/ZVVdWDG/');
   background-color: black;
-  background-size: auto;
+  background-size: cover;
   background-position: bottom;
   margin: 0px;
 }
@@ -103,10 +103,11 @@ button:focus {
   margin: 0px;
   width: 50%;
   height: 100%;
-  background-image: url('//img1.wsimg.com/isteam/stock/25536/');
-  background-size: cover;
-  background-color: black;
-  background-position: center;
+  background-image: url('./finding_sherlock.png');
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-color: rgb(64, 15, 15);
+  background-position: top;
 }
 
 #circle {
@@ -230,6 +231,11 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  /*font-size: 2em;*/
+  /*color: rgb(101, 136, 160);*/
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.5em;
+  color: rgb(101, 136, 160);
 }
 
 .about-paragraph {
@@ -506,10 +512,10 @@ textarea {
     margin: 0px;
     width: 100%;
     height: 50%;
-    background-image: url('//img1.wsimg.com/isteam/stock/25536/');
-    background-size: cover;
-    background-color: black;
-    background-position: center;
+    background-image: url('./finding_sherlock.png');
+    background-size: 230px;
+    background-color: rgb(64, 15, 15);
+    background-position: top;
   }
 
   #left-banner {
@@ -525,7 +531,7 @@ textarea {
   #circle {
     height: 50vw;
     width: 50vw;
-    background-color: rgba(89, 121, 142, 0.9);
+    background-color: rgba(89, 121, 142, 0.7);
     border-radius: 50%;
     position: absolute;
     left: 0;
@@ -539,9 +545,9 @@ textarea {
    }
 
    #mobile-info-rooms {
-     margin-top: 30%;
+     margin-top: 15%;
      /* padding-bottom: 0%; */
-     height: 35vh;
+     height: 50vh;
      display: flex;
      justify-content: space-around;
      align-items: center;
@@ -704,11 +710,16 @@ textarea {
   }
 
   #about-us {
-    margin-top: 25%;
+    margin-top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    /*font-size: 2em;*/
+    /*color: rgb(101, 136, 160);*/
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.5em;
+    color: rgb(101, 136, 160);
+    margin-bottom: 30%;
   }
 
   .about-paragraph {

@@ -94,6 +94,44 @@ angular.module("myApp").controller("mainController", function($scope){
   // };
 
   $scope.showInfo = () => {
-    // $('#room-info').css({'display':'block'});
+    $('.room-scheduling-1').removeClass('animate-enter');
+    $('.room-scheduling-1').addClass('animate-leave');
+    $('body').css({'background-color':'black'});
+    $('#insert-room-1').css({'display':'block'});
+    // $('.room-scheduling-1').toggleClass('animate-room-scheduling-1');
+    setTimeout(function(){
+      // $('.room-1').removeClass('animate-leave');
+      // $('.room-1').addClass('animate-enter');
+      $('#insert-room-1').css({'height':'70vh','opacity':'1'});
+      $('#room-scheduling-1').css({'opacity':'0'});
+      $('#main-background').css({'display':'none'});
+      $('#room-scheduling-1').css({'display':'none'});
+      $('#floating-text').css({'display':'none'});
+      $('#main-background').css({'opacity':'0'});
+      $('.button-row').addClass('button-row-about');
+},400);
+
+// $('#home').css({'display':'block'});
+// $('#room-scheduling-1').css({'opacity':'0'});
+// $('body').css({'background-color':'rgb(17, 17, 17)'});
+// setTimeout(function(){
+//   $('.home').removeClass('animate-leave');
+//   $('.home').addClass('animate-enter');
+//   $('#main-background').css({'display':'none'});
+//   $('#room-scheduling-1').css({'display':'none'});
+//   $('#floating-text').css({'display':'none'});
+// },400);
+//
+//
+//
+//     $('#floating-text').css({'display':'none'});
+//     $('#main-background').css({'opacity':'0'});
+//     setTimeout(function(){
+//       $('#main-background').css({'display':'none'});
+      // $('#insert-room-1').css({'height':'70vh','opacity':'1','display':'block'});
+//       // $('#insert-room-1').css({'height':'70vh'});
+//       // $('#insert-room-1').css({'opacity':'1'});
+//       $('body').css({'background-color':'black'});
+//     },500);
   };
 });

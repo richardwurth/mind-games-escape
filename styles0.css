@@ -7,6 +7,14 @@
   transition: background-color .5s;
 }*/
 
+#insert-room-1 {
+  display: none;
+  height: 0px;
+  opacity: 0;
+  transition: opacity .5s;
+  /*z-index: -20;*/
+}
+
 #arrow {
   position: absolute;
   left: 10px;
@@ -19,6 +27,7 @@
   height: 90%;
   width: 60%;
   top: 32%;
+  z-index: 2;
   right: 120px;
   left: 0px;
   margin: auto;
@@ -76,12 +85,20 @@ button:focus {
   border-width: 0px;
 }
 
-#button-row {
+
+.button-row {
   height: 100px;
   width: 600px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.button-row-about {
+  position:absolute;
+  bottom:-50%;
+  width:100%;
+  margin-bottom:20px;
 }
 
 @keyframes oneFade {
@@ -320,7 +337,7 @@ button:focus {
     justify-content: space-around;
   }
 
-  #button-row {
+  .button-row {
     height: 150px;
     /* width: 100%; */
     display: flex;
