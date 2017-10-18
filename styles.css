@@ -758,6 +758,8 @@ textarea {
 
   .about-content {
     position: absolute;
+    padding-bottom: 0px;
+    padding-top: 0px;
     color: white;
     display: flex;
     flex-direction: column;
