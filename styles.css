@@ -1011,7 +1011,7 @@ button:focus {
     }
 
     .about-content {
-      left: -6%;
+      left: 5%;
       position: absolute;
       padding-bottom: 0px;
       padding-top: 0px;
@@ -1289,6 +1289,6 @@ button:focus {
   }
 
 * {
-   outline: 1px solid green;
+   outline: 1px solid red;
   }
 /*# sourceMappingURL=styles.css.map */
