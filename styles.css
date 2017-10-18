@@ -957,5 +957,7 @@ textarea {
   }
 }
 
-
+* {
+   outline: 1px solid red;
+  }
 /*# sourceMappingURL=styles.css.map */
