@@ -1128,7 +1128,7 @@ button:focus {
 
     #contact-form {
       height: 66%;
-      width: 96%;
+      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1144,7 +1144,7 @@ button:focus {
     }
 
     .form-control {
-      width: 96%;
+      width: 100%;
       margin-bottom: 10px;
       background-color: black;
       font-family: 'Montserrat', arial, sans-serif;
@@ -1275,6 +1275,6 @@ button:focus {
   }
 
 * {
-   outline: 1px solid red;
+   outline: 1px solid green;
   }
 /*# sourceMappingURL=styles.css.map */
