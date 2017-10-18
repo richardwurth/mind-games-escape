@@ -1,4 +1,16 @@
 @charset "UTF-8";
+
+.about-room-1 {
+    position: absolute;
+    height: 400px;
+    bottom: -25%;
+    left: 20%;
+    /* margin-left: -360px; */
+    width: 60%;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+}
+
 [data-am-fadeshow] {
   position: relative;
   width: 100%;
@@ -754,10 +766,15 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (max-width : 420px) {
+
 .about-room-1 {
   position: absolute;
+  width: 100%;
+  left: auto;
   height: auto;
   bottom: -30%;
   font-family: 'Archivo Black', sans-serif;
   text-align: center;
+}
 }

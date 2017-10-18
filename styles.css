@@ -729,7 +729,7 @@ textarea {
 
   .about-nav {
     height: 750px;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -742,11 +742,12 @@ textarea {
    }
 
   .about-section {
-    width: 375px;
+    width: 100%;
     height: 250px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
   }
 
 
