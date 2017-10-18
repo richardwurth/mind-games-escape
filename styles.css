@@ -991,6 +991,7 @@ button:focus {
 
     .about-section {
       width: 100%;
+      margin: auto;
       height: 250px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1287,6 +1288,6 @@ button:focus {
   }
 
 * {
-   outline: 1px solid green;
+   outline: 1px solid red;
   }
 /*# sourceMappingURL=styles.css.map */
