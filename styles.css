@@ -459,6 +459,10 @@ button:focus {
     padding: 0px;
   }
 
+  input {
+    padding: 0px;
+  }
+
   #signup-button {
     height: 50px;
     width: 20%;
@@ -1271,6 +1275,6 @@ button:focus {
   }
 
 * {
-   outline: 1px solid green;
+   outline: 1px solid red;
   }
 /*# sourceMappingURL=styles.css.map */
