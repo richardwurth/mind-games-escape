@@ -59,6 +59,8 @@ angular.module("myApp").controller("mainController", function($scope){
       $('#main-background').css({'display':'none'});
       $('#room-scheduling-1').css({'display':'none'});
       $('#floating-text').css({'display':'none'});
+      $('#iframe_id').css({'opacity':'0'});
+      $('#iframe_id').css({'height':'0px'});
 },400);
   };
 
@@ -72,6 +74,7 @@ angular.module("myApp").controller("mainController", function($scope){
         $('body').css({'background-color':'black'});
         $('#iframe_id').css({'opacity':'1'});
         $('#iframe_id').css({'height':'70vh'});
+        $('#schedule-button').text("Go Back");
       },500);
       showingDefault = false;
     } else if (showingDefault === false && mq.matches === true) {
@@ -82,6 +85,7 @@ angular.module("myApp").controller("mainController", function($scope){
         $('#main-background').css({'display':'block'});
         $('#main-background').css({'opacity':'1'});
         $('body').css({'background-color':'#400f0f'});
+        $('#schedule-button').text("Purchase Tickets");
     },500);
       showingDefault = true;
     } else {
