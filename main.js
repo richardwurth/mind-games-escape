@@ -73,7 +73,7 @@ angular.module("myApp").controller("mainController", function($scope){
         $('#main-background').css({'display':'none'});
         $('body').css({'background-color':'black'});
         $('#iframe_id').css({'opacity':'1'});
-        $('#iframe_id').css({'height':'70vh'});
+        $('#iframe_id').css({'height':'80vh'});
         $('#schedule-button').text("Go Back");
       },500);
       showingDefault = false;
