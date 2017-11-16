@@ -356,10 +356,10 @@ button:focus {
     font-weight: bold;
     color: black;
     background-color: white;
-    height: 55px;
+    height: 90px;
     margin-top: 10px;
     /* margin-bottom: 10px; */
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;

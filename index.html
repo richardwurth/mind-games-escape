@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles0.css">
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat" rel="stylesheet">
-  <title>Mind Games Escape - Alpha</title>
+  <title>Mind Games Escape</title>
 </head>
 <body ng-controller="mainController">
   <div id="room-scheduling-1" class="room-scheduling-1" ng-include="'index0.html'"></div>
@@ -30,14 +30,15 @@
   <div id="mobile-info-rooms">
     <div id="mobile-info">Below you will find our rooms currently available</div>
     <button ng-click="successTest()" id="mobile-rooms-button">SEE ALL ROOMS</button>
+    <button ng-click="testClick()" id="mobile-rooms-button">BOOK ONLINE</button>
   </div>
-  <div id="about-us">
+  <div id='room-booking'>
+  <!-- <div id="about-us">
     <h1>ABOUT US</h1>
   </div>
   <div class="about-nav">
     <div id="first" class="about-section">
       <div id="first-background"></div>
-      <!-- <img src="//img1.wsimg.com/isteam/stock/25543/" height=250px width=100%> -->
       <div class="about-content">
         <p class="about-header">Private Events</p>
         <p id="private-event">Looking to book a private event? Click here</p>
@@ -45,7 +46,6 @@
     </div>
     <div id="second" class="about-section">
       <div id="second-background"></div>
-      <!-- <img src="//img1.wsimg.com/isteam/stock/124779/" height=250px width=375px> -->
       <div class="about-content">
         <p class="about-header">Previous Rooms</p>
         <p class="about-paragraph">Click here to see some rooms we had in the past</p>
@@ -53,7 +53,6 @@
     </div>
     <div id="third" class="about-section">
       <div id="third-background"></div>
-      <!-- <img style="opacity: .5;" src="//img1.wsimg.com/isteam/stock/18377/" height=250px width=375px> -->
       <div class="about-content">
         <p class="about-header">About the Owners</p>
         <p id="know-more">Click here if you would like to know more about the owners</p>
@@ -76,9 +75,9 @@
     </form>
   </div>
   <button id="contact-send-button" type="button" name="button">SEND</button>
-</div>
+</div> -->
 <div class="see-us">
-  <h2>Better yet, see us in person!</h2>
+  <h2>Come see us!</h2>
   <p style="opacity: .8">We love our customers, so feel free to visit during normal business hours.</p>
 </div>
 <div id="location">
@@ -94,7 +93,7 @@
 </div>
 <div id="footer">
   <p style="font-weight: bold; padding-bottom: 40px">Copyright © 2017 Mind Games Escape - All Rights Reserved.</p>
-  <p style="opacity: .8; padding-bottom: 40px">Powered by nacho-daddy</p>
+  <p style="opacity: .8; padding-bottom: 40px">Powered by WürthWhile Productions</p>
 </div>
 </div>
 </div>
